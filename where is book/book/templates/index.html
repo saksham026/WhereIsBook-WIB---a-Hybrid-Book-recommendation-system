@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pandas Example</title>
+</head>
+<body>
+        
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="index.html" class="navbar-brand">BRS</a>
+          </div>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+               </ul>
+          </div>
+
+  </div>
+</div>
+
+<pre>
+<h1>Welcome to our app</h1><h1>{{user_id}}</h1>
+</pre>
+<table>
+        <tr>
+                <th>Boooks-Authors</th>
+                
+        </tr>
+        {% for k in user_items %}
+                <tr>
+                        <td>{{ k }}</td>
+                </tr>
+        {% endfor %}
+</table>
+{{pred|safe}}
+<form action = "http://localhost:5000/popular" method = "post">
+         <p>Enter id:</p>
+         <p><input type = "submit" name = "nm" /></p>
+</form>
+
+<form action = "http://localhost:5000/similar" method = "post">
+         <p>Enter id:</p>
+         <p><input type = "text" name = "nm" /></p>
+</form>
+
+</body>
+</html>
